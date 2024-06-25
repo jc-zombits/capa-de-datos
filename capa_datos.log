@@ -1,0 +1,49 @@
+08:14:05 PM: DEBUG [cursor_del_pool.py:12] Inicio del metodo with __enter__
+08:14:05 PM: DEBUG [conexion.py:28] Creación de pool exitoda <psycopg2.pool.SimpleConnectionPool object at 0x7fdf84f7d2b0>
+08:14:05 PM: DEBUG [conexion.py:40] Conexión obtenida del pool <connection object at 0x7fdf84ffa840; dsn: 'user=postgres password=xxx dbname=test_db host=192.168.58.113 port=5432', closed: 0>
+08:14:05 PM: DEBUG [usuario_dao.py:21] Seleccionando Usuarios
+08:14:05 PM: DEBUG [cursor_del_pool.py:18] Se ejecuta método __exit__
+08:14:05 PM: ERROR [cursor_del_pool.py:21] Ocurrió una excepción: no existe la columna «is_usuario»
+LINE 1: SELECT * FROM usuario ORDER BY is_usuario
+                                       ^
+HINT:  Probablemente quiera hacer referencia a la columna «usuario.id_usuario».
+ <class 'psycopg2.errors.UndefinedColumn'> <traceback object at 0x7fdf84723240>
+08:14:05 PM: DEBUG [conexion.py:46] Regresamos la conexión al pool: <connection object at 0x7fdf84ffa840; dsn: 'user=postgres password=xxx dbname=test_db host=192.168.58.113 port=5432', closed: 0>
+08:15:13 PM: DEBUG [cursor_del_pool.py:12] Inicio del metodo with __enter__
+08:15:13 PM: DEBUG [conexion.py:28] Creación de pool exitoda <psycopg2.pool.SimpleConnectionPool object at 0x7f91a7f3d2b0>
+08:15:13 PM: DEBUG [conexion.py:40] Conexión obtenida del pool <connection object at 0x7f91a7fa2840; dsn: 'user=postgres password=xxx dbname=test_db host=192.168.58.113 port=5432', closed: 0>
+08:15:13 PM: DEBUG [usuario_dao.py:21] Seleccionando Usuarios
+08:15:13 PM: DEBUG [cursor_del_pool.py:18] Se ejecuta método __exit__
+08:15:13 PM: ERROR [cursor_del_pool.py:21] Ocurrió una excepción: no existe la columna «is_usuario»
+LINE 1: SELECT * FROM usuario ORDER BY is_usuario
+                                       ^
+HINT:  Probablemente quiera hacer referencia a la columna «usuario.id_usuario».
+ <class 'psycopg2.errors.UndefinedColumn'> <traceback object at 0x7f91a76ad6c0>
+08:15:13 PM: DEBUG [conexion.py:46] Regresamos la conexión al pool: <connection object at 0x7f91a7fa2840; dsn: 'user=postgres password=xxx dbname=test_db host=192.168.58.113 port=5432', closed: 0>
+08:16:08 PM: DEBUG [cursor_del_pool.py:12] Inicio del metodo with __enter__
+08:16:08 PM: DEBUG [conexion.py:28] Creación de pool exitoda <psycopg2.pool.SimpleConnectionPool object at 0x7fd240879250>
+08:16:08 PM: DEBUG [conexion.py:40] Conexión obtenida del pool <connection object at 0x7fd2408f6840; dsn: 'user=postgres password=xxx dbname=test_db host=192.168.58.113 port=5432', closed: 0>
+08:16:08 PM: DEBUG [usuario_dao.py:21] Seleccionando Usuarios
+08:16:08 PM: DEBUG [cursor_del_pool.py:18] Se ejecuta método __exit__
+08:16:08 PM: DEBUG [cursor_del_pool.py:24] Commit de la transacción
+08:16:08 PM: DEBUG [conexion.py:46] Regresamos la conexión al pool: <connection object at 0x7fd2408f6840; dsn: 'user=postgres password=xxx dbname=test_db host=192.168.58.113 port=5432', closed: 0>
+08:16:08 PM: INFO [menu_app_usuario.py:19] Usuario: 1 jperez 123
+08:16:08 PM: INFO [menu_app_usuario.py:19] Usuario: 2 kgomez 456
+08:17:40 PM: INFO [menu_app_usuario.py:19] Usuario: 1 jperez 123
+08:17:40 PM: INFO [menu_app_usuario.py:19] Usuario: 2 kgomez 456
+08:18:37 PM: INFO [menu_app_usuario.py:22] Salimos de la aplicación
+08:33:14 PM: INFO [menu_app_usuario.py:26] Usuarios insertados: 1
+08:33:19 PM: INFO [menu_app_usuario.py:20] Usuario: 1 jperez 123
+08:33:19 PM: INFO [menu_app_usuario.py:20] Usuario: 2 kgomez 456
+08:33:19 PM: INFO [menu_app_usuario.py:20] Usuario: 3 mlara 567
+08:35:26 PM: INFO [menu_app_usuario.py:33] Usuarios actualizados: 1
+08:35:31 PM: INFO [menu_app_usuario.py:20] Usuario: 1 jperez 123
+08:35:31 PM: INFO [menu_app_usuario.py:20] Usuario: 2 karlagomez 8910
+08:35:31 PM: INFO [menu_app_usuario.py:20] Usuario: 3 mlara 567
+08:35:53 PM: INFO [menu_app_usuario.py:38] Usuarios eliminados: 1
+08:35:56 PM: INFO [menu_app_usuario.py:20] Usuario: 1 jperez 123
+08:35:56 PM: INFO [menu_app_usuario.py:20] Usuario: 2 karlagomez 8910
+08:36:17 PM: INFO [menu_app_usuario.py:33] Usuarios actualizados: 1
+08:36:18 PM: INFO [menu_app_usuario.py:20] Usuario: 1 jperez 123
+08:36:18 PM: INFO [menu_app_usuario.py:20] Usuario: 2 kgomez 456
+08:36:41 PM: INFO [menu_app_usuario.py:40] Salimos de la aplicación
